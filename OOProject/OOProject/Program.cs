@@ -4,6 +4,19 @@
     {
         static void Main(string[] args)
         {
+            DoExerciseCar();
+        }
+
+        static void DoExerciseCar()
+        {
+            ExerciseCar car = new ExerciseCar("pink", 120);
+            car.Start(100);
+            Console.WriteLine(car.IsRunning);
+            car.IncreaseSpeed(25);
+            Console.WriteLine(car.CurrentSpeed);
+        }
+        static void CarStuff()
+        {
             Car car = new Car();
             car.AantalWielen = 4;
             car.Color = "Black";
@@ -21,9 +34,6 @@
             Console.WriteLine(car2.CurrentSpeed);
             car2.IncreaseSpeed(30);
             Console.WriteLine(car2.CurrentSpeed);
-
-
-
         }
     }
 }
