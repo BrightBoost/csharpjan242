@@ -22,7 +22,7 @@
 - Don’t use if or another conditional expression, you don’t need it
 
 
-### OOP
+### Objects, methods & OOP
 1. **Person Class with Overloading**:
    - Create a `Person` class with properties like name, age, and address. Implement multiple constructors with different parameter lists to create `Person` objects in various ways.
 2. **Simple Bank Account**:
