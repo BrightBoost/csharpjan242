@@ -23,11 +23,10 @@
 
 **Step 4: Item Details and Adding Items**
 - For displaying item details, implement a method in the `InventoryItem` class that displays common properties and override it in derived classes to include specific properties.
-- For adding items, create a method that takes user input and creates an object of the appropriate derived class.
 
 **Step 5: Constructors and Methods**
 - Create constructors for the base class and each derived class.
-- Implement methods for each user interaction: viewing items, looking up details, and adding items.
+- Implement methods for each user interaction: viewing items and looking up details
 
 **Step 6: Basic User Interface**
 - Use a loop with a switch or if-else statements for the menu selection.
