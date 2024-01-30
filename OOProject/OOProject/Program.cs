@@ -5,6 +5,18 @@
         static void Main(string[] args)
         {
             DoExerciseCar();
+            User user = new User(); 
+            user.Name = "TestUser";
+            Person person = new Person();
+            person.Name = "TestPerson";
+            PersonPrinter(person);
+            PersonPrinter(user);
+            PersonPrinter(new Admin());
+        }
+
+        static void PersonPrinter(Person person)
+        {
+            Console.WriteLine(person.Name);
         }
 
         static void DoExerciseCar()

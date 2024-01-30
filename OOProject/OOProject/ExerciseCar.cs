@@ -21,7 +21,12 @@ Make an instance of the Car, and start the car.*/
 
     internal class ExerciseCar
     {
-        public string Color { get; set; } = "black";
+        private string _color;
+        public string Color {
+            get => _color;
+            set => _color = value.ToLower();
+        }
+
         public bool IsRunning { get; set; }
         public int CurrentSpeed { get; set; }
         public int MaxSpeed { get; set; } = 100;
@@ -29,6 +34,11 @@ Make an instance of the Car, and start the car.*/
         public ExerciseCar(string color, int maxSpeed) {
             Color = color;
             MaxSpeed = maxSpeed;
+        }
+
+        public ExerciseCar(string color)
+        {
+            Color = color;
         }
 
         public ExerciseCar() { }
