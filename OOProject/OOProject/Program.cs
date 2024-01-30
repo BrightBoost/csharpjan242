@@ -1,4 +1,6 @@
-﻿namespace OOProject
+﻿//using OOProject.ShapeExercise;
+
+namespace OOProject
 {
     internal class Program
     {
@@ -14,6 +16,26 @@
             PersonPrinter(new Admin());
             user.IntroduceYourself();
             person.IntroduceYourself();
+            // Shape s = new Shape();
+            Program program = new Program();
+            program.AdministratieSingleton();
+            HaarKleurVoorbeeld();
+        }
+
+        static void HaarKleurVoorbeeld()
+        {
+            Person p1 = new Person("Thomas");
+            Person p2 = new Person("Maaike");
+            p1.DyeHair("Blauw");
+            p2.DyeHair("Roze");
+
+            Console.Write(p1.Name + " heef haarkleur " + p1.GetHairColor());
+            Console.Write(p2.Name + " heef haarkleur " + p2.GetHairColor());
+        }
+
+         void AdministratieSingleton()
+        {
+            AppConfiguratie administratieVoorbeeld = AppConfiguratie.GetInstance();
         }
 
         static void PersonPrinter(Person person)

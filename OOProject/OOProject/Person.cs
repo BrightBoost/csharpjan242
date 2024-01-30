@@ -10,6 +10,7 @@ namespace OOProject
     {
         
         public string Name { get; set; }
+        public string HairColor { get; set; }
         public int Id { get; set; }
         public string Email { get; set; }
 
@@ -26,6 +27,16 @@ namespace OOProject
         public virtual void IntroduceYourself()
         {
             Console.WriteLine("Hi, I'm " + Name);
+        }
+
+        public void DyeHair(string color)
+        {
+            HairColor = color;
+        }
+
+        public string GetHairColor()
+        {
+            return HairColor;
         }
 
     }
