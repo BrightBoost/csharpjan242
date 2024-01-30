@@ -8,5 +8,9 @@ namespace OOProject
 {
     internal class Admin : Person
     {
+        public Admin() : base("admin")
+        {
+
+        }
     }
 }

@@ -8,10 +8,25 @@ namespace OOProject
 {
     public class Person
     {
-        public Person() { }
+        
         public string Name { get; set; }
         public int Id { get; set; }
         public string Email { get; set; }
-        
+
+        public Person(string name) : this(name, name + "@example.com")
+        {
+        }
+
+        public Person(string name, string email) 
+        {
+            Name = name;
+            Email = email;
+        }
+
+        public virtual void IntroduceYourself()
+        {
+            Console.WriteLine("Hi, I'm " + Name);
+        }
+
     }
 }

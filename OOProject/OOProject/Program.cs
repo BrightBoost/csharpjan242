@@ -5,13 +5,15 @@
         static void Main(string[] args)
         {
             DoExerciseCar();
-            User user = new User(); 
+            User user = new User("Eelco", "Eelco123"); 
             user.Name = "TestUser";
-            Person person = new Person();
+            Person person = new Person("Niek");
             person.Name = "TestPerson";
             PersonPrinter(person);
             PersonPrinter(user);
             PersonPrinter(new Admin());
+            user.IntroduceYourself();
+            person.IntroduceYourself();
         }
 
         static void PersonPrinter(Person person)

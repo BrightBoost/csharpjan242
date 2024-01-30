@@ -8,7 +8,15 @@ namespace OOProject
 {
     internal class User : Person
     {
-        public User() { }
+        public User(string name, string userName) : base(name) 
+        { 
+            UserName = userName;
+        }
         public string UserName { get; set; }
+
+        public override void IntroduceYourself()
+        {
+            Console.WriteLine("Hi, I'm user " + UserName);
+        }
     }
 }
