@@ -1,0 +1,13 @@
+Schrijf de code (zo kort mogelijk) om dit liedje in het console uit te printen
+
+10 Little monkeys jumping on a bed, one jumped up and bumped his head, Mom called the Doctor and the doctor said........"no more monkeys jumping on a bed."
+9 Little monkeys jumping on a bed, one jumped up and bumped his head. Mom called the Doctor and the Doctor said......."no more monkeys jumping on a bed."
+…..
+1 Little monkey jumping on a bed, he jumped up and bumped his head. Mom called the Doctor and the Doctor said....."no more monkeys jumping on a bed."
+
+Bonus: maak de 10 een variable
+
+Bonus: gebruik verschillende soorten loops om hetzelfde te bereiken!
+
+
+
