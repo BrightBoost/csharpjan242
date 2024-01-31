@@ -6,8 +6,9 @@ namespace CollectionsEnzo
     {
         static void Main(string[] args)
         {
-            LinqVoorbeelden.Voorbeelden();
-            
+            LezenEnSchrijven.SchrijfVoorbeeld();
+
+
         }
 
         static void PopulateCustomerAddresses(Customer customer)

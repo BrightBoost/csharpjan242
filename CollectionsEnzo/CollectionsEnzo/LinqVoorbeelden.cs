@@ -1,15 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace CollectionsEnzo
 {
     internal class LinqVoorbeelden
     {
+/*Give animals a name and an age
+Create a list of animals
+Use LINQ to get the animals older than 5
+Order them first by name
+Then by age*/
+
         public static void Voorbeelden()
         {
+            var animals = new List<Animal>
+            {
+                new Animal
+                {
+                    Name = "Max",
+                    Age = 1
+                },
+                new Animal
+                {
+                    Name = "Ayla",
+                    Age = 7
+                },
+                new Animal
+                {
+                    Name = "Whopper",
+                    Age = 16
+                },
+                new Animal
+                {
+                    Name = "Shiva",
+                    Age = 3
+                },
+                new Animal
+                {
+                    Name = "Boeddie",
+                    Age = 3
+                }
+
+            };
+
+            animals.FindAll(a => a.Age >= 5)
+                .OrderBy(a => a.Name)
+                .ThenBy(a => a.Age)
+                .ToList()
+                .ForEach(a => Console.WriteLine(a));
+
+
             var list = new List<int> { 6, 1, 2, 3, 4, 5, 7 };
 
             list.ForEach(getal => Console.WriteLine(getal));
