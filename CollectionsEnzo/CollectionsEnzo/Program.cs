@@ -1,8 +1,53 @@
-﻿namespace CollectionsEnzo
+﻿using CollectionsEnzo.voorbeeldGenerics;
+
+namespace CollectionsEnzo
 {
     internal class Program
     {
         static void Main(string[] args)
+        {
+            MyFirstList();
+        }
+
+        static void MyFirstList()
+        {
+            var list = new List<int> { 6, 1, 2, 3, 4, 5, 7 };
+
+            foreach (int item in list)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+            // item weggooien
+            list.RemoveAt(6);
+            list.Remove(6);
+
+
+
+        }
+
+        static void GenericsExplained()
+        {
+            Laptop laptop = new Laptop();
+            laptop.Brand = "Lenovo";
+            laptop.Model = "Iets met pad";
+            Bag<Laptop> laptopBag = new Bag<Laptop>();
+            laptopBag.content = laptop;
+            laptopBag.PrintContent();
+
+            Chihuahua chihuahua = new Chihuahua();
+            chihuahua.Name = "Coco";
+            Bag<Chihuahua> chihuahuaBag = new Bag<Chihuahua>();
+            chihuahuaBag.content = chihuahua;
+            chihuahuaBag.PrintContent();
+        }
+
+        static void ArrayOpdracht()
+        {
+            OpdrachtArray opdrachtArray = new OpdrachtArray();
+            opdrachtArray.Opdracht();
+        }
+        static void VoorbeeldArrayStuff()
         {
             VoorbeeldArray voorbeeldArray = new VoorbeeldArray();
             voorbeeldArray.Ints = new int[12];
