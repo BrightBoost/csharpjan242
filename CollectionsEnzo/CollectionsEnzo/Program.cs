@@ -6,7 +6,27 @@ namespace CollectionsEnzo
     {
         static void Main(string[] args)
         {
-            MyFirstList();
+            LinqVoorbeelden.Voorbeelden();
+            
+        }
+
+        static void PopulateCustomerAddresses(Customer customer)
+        {
+            customer.Addresses.Add(new Address()
+            {
+                StreetName = "Hart van Brabantlaan",
+                City = "Tilburg",
+                PostalCode = "5049aa",
+                HouseNumber = "12-14"
+            });
+
+            customer.Addresses.Add(new Address()
+            {
+                StreetName = "Maliebaan",
+                City = "Utrecht",
+                PostalCode = "3851CZ",
+                HouseNumber = "108"
+            });
         }
 
         static void MyFirstList()
