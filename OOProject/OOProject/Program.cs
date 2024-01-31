@@ -1,4 +1,4 @@
-﻿//using OOProject.ShapeExercise;
+﻿using OOProject.ShapeExercise;
 
 namespace OOProject
 {
@@ -6,20 +6,25 @@ namespace OOProject
     {
         static void Main(string[] args)
         {
-            DoExerciseCar();
-            User user = new User("Eelco", "Eelco123"); 
-            user.Name = "TestUser";
-            Person person = new Person("Niek");
-            person.Name = "TestPerson";
-            PersonPrinter(person);
-            PersonPrinter(user);
-            PersonPrinter(new Admin());
-            user.IntroduceYourself();
-            person.IntroduceYourself();
-            // Shape s = new Shape();
-            Program program = new Program();
-            program.AdministratieSingleton();
-            HaarKleurVoorbeeld();
+            UseCaseInterfaces(new Triangle());
+        }
+
+        static void UseCaseInterfaces(IFoldable foldable)
+        {
+            List<string> strings = new List<string>() { "bla", "blabla", "blablabla"};
+
+            foreach (string s in strings)
+            {
+                Console.WriteLine(s);
+            }
+
+            Car c = new Car();
+            // mag niet want Car implementeert niet IEnumerable
+            //foreach(string s in c)
+            //{
+            //    Console.WriteLine($"{s}");
+            //}
+
         }
 
         static void HaarKleurVoorbeeld()

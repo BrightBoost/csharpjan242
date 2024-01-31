@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOProject.ShapeExercise
 {
-    internal class Triangle : Shape
+    internal class Triangle : Shape, IFoldable
     {
         public override sealed double CalcArea()
         {
@@ -14,6 +14,11 @@ namespace OOProject.ShapeExercise
         }
 
         public override double CalcCircumference()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Fold()
         {
             throw new NotImplementedException();
         }
